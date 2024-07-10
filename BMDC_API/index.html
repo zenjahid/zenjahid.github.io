@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMDC API by zenjahid</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #333;
+      }
+      pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        overflow-x: auto;
+        border-radius: 5px;
+      }
+      code {
+        font-family: Consolas, Monaco, monospace;
+        font-size: 0.9em;
+        color: #c7254e;
+      }
+      .request-type {
+        font-weight: bold;
+        color: #1e90ff;
+      }
+      .response-success {
+        color: green;
+      }
+      .response-error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BMDC API Documentation</h1>
+    <h2>
+      This basic api enables user to authenticate the doctor with their
+      registration number. Developed by zenjahid.
+    </h2>
+
+    <section>
+      <h2>Get Captcha</h2>
+      <p><span class="request-type">Request Type:</span> GET</p>
+      <p>
+        <span class="request-type">Request URL:</span>
+        <code>https://bmdc-api.onrender.com/get_captcha</code>
+      </p>
+      <p><span class="request-type">Parameters:</span> None</p>
+      <h3>Response:</h3>
+      <pre class="response-success">
+{
+    "error": "no",
+    "captcha_src": "https://verify.bmdc.org.bd/cpt/1720618813.933.jpg",
+    "csrf_token_value": "a0b94f6fe222d26aa95d6a2cd0ff6e2d",
+    "action_key_value": "vWb5HoQ6YwhR",
+    "cookies": {
+        "bmdckyc_csrf_cookie": "a0b94f6fe222d26aa95d6a2cd0ff6e2d"
+    }
+}
+        </pre
+      >
+      <pre class="response-error">
+{
+    "error": "yes"
+}
+        </pre
+      >
+    </section>
+
+    <section>
+      <h2>Get Doctor Info</h2>
+      <p><span class="request-type">Request Type:</span> POST</p>
+      <p>
+        <span class="request-type">Request URL:</span>
+        <code>https://bmdc-api.onrender.com/get_info</code>
+      </p>
+      <p><span class="request-type">Parameters (as JSON):</span></p>
+      <pre>
+{
+    "bmdckyc_csrf_token": "xxx",
+    "reg_ful_no": "xxx",
+    "captcha_code": "xxx",
+    "action_key": "xxx",
+    "cookies": "xxx"
+}
+        </pre
+      >
+      <h3>Response:</h3>
+      <pre class="response-success">
+{
+    "error": "no",
+    "reg_no": "A-123321",
+    "name": "TANBIM SHIFAT - E - ALAM PROVA",
+    "father_name": "MD. SAIFUL ALAM",
+    "mother_name": "JESSY ALAM",
+    "dob": "**/**/1998",
+    "blood": "B+",
+    "reg_year": "2023",
+    "reg_valid": "07/06/2028",
+    "reg_stat": "ACTIVE"
+}
+        </pre
+      >
+      <pre class="response-error">
+{
+    "error": "yes"
+}
+        </pre
+      >
+    </section>
+  </body>
+</html>
