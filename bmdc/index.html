@@ -50,13 +50,14 @@
       This basic api enables user to authenticate the doctor with their
       registration number. Developed by zenjahid.
     </h2>
+    <h1>Version 1</h1>
 
     <section>
       <h2>Get Captcha</h2>
       <p><span class="request-type">Request Type:</span> GET</p>
       <p>
         <span class="request-type">Request URL:</span>
-        <code>https://bmdc-api.onrender.com/get_captcha</code>
+        <code>https://bmdc-api.onrender.com/v1/get_captcha</code>
       </p>
       <p><span class="request-type">Parameters:</span> None</p>
       <h3>Response:</h3>
@@ -90,7 +91,7 @@
       <p><span class="request-type">Request Type:</span> POST</p>
       <p>
         <span class="request-type">Request URL:</span>
-        <code>https://bmdc-api.onrender.com/get_info</code>
+        <code>https://bmdc-api.onrender.com/v1/get_info</code>
       </p>
       <p><span class="request-type">Parameters (as JSON):</span></p>
       <pre>
@@ -100,6 +101,45 @@
     "captcha_code": "xxx",
     "action_key": "xxx",
     "cookies": "xxx"
+}
+        </pre
+      >
+      <h3>Response:</h3>
+      <pre class="response-success">
+{
+    "error": "no",
+    "reg_no": "A-123321",
+    "name": "TANBIM SHIFAT - E - ALAM PROVA",
+    "father_name": "MD. SAIFUL ALAM",
+    "mother_name": "JESSY ALAM",
+    "dob": "**/**/1998",
+    "blood": "B+",
+    "reg_year": "2023",
+    "reg_valid": "07/06/2028",
+    "reg_stat": "ACTIVE"
+}
+        </pre
+      >
+      <pre class="response-error">
+{
+    "error": "yes"
+}
+        </pre
+      >
+    </section>
+    <h1>Version 2</h1>
+    <section>
+      <h2>Get Doctor Info</h2>
+      <p><span class="request-type">Request Type:</span> POST</p>
+      <p>
+        <span class="request-type">Request URL:</span>
+        <code>https://bmdc-api.onrender.com/v2/get_data</code>
+      </p>
+      <p><span class="request-type">Parameters (as JSON):</span></p>
+      <pre>
+{
+    "reg_no": 122431,
+    "try_time":12 //optuinal, the default value is set to 10
 }
         </pre
       >
