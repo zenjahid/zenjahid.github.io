@@ -3,146 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD. Jahidul Haque Junayer | Full Stack Developer</title>
-    <meta name="description" content="Portfolio of MD. Jahidul Haque Junayer - Full Stack Developer specializing in web development and software engineering. View my projects and experience.">
-    <meta name="keywords" content="software developer, full stack developer, web developer, portfolio, projects, programming">
     
-    <!-- Tailwind CDN -->
+    <!-- SEO Optimized Meta Tags -->
+    <title>MD. Jahidul Haque Junayer | Full Stack Developer for Hire | Expert in Python, TypeScript, Next.js</title>
+    <meta name="description" content="Experienced Full Stack Developer available for hire. Expert in Python, JavaScript, TypeScript, Next.js, MongoDB, PostgreSQL. Building scalable web applications and robust backend systems.">
+    <meta name="keywords" content="full stack developer, python developer, typescript developer, nextjs developer, backend developer, frontend developer, database expert, software engineer for hire, remote developer, freelance programmer">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Hire MD. Jahidul Haque Junayer - Full Stack Developer">
+    <meta property="og:description" content="Full Stack Developer with expertise in Python, TypeScript, Next.js, and database systems. Available for hire.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/84239550?v=4">
+    
+    <!-- Tailwind and FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        .skill-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
-        .animate-gradient {
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-        }
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        .gradient-text {
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="bg-black text-white">
+<body class="bg-gray-900 text-white">
     <!-- Hero Section -->
-    <header class="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div class="absolute inset-0 animate-gradient opacity-10"></div>
-        <div class="container mx-auto px-4 text-center z-10">
-            <img src="https://avatars.githubusercontent.com/u/84239550?v=4" 
-                 alt="MD. Jahidul Haque Junayer" 
-                 class="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-blue-500/20">
+    <header class="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <img src="https://avatars.githubusercontent.com/u/84239550?v=4" 
+                     alt="MD. Jahidul Haque Junayer" 
+                     class="w-32 h-32 rounded-full mx-auto border-4 border-blue-500/30">
+            </div>
             <h1 class="text-4xl md:text-6xl font-bold mb-4">MD. Jahidul Haque Junayer</h1>
-            <h2 class="text-xl md:text-2xl text-gray-400 mb-8">Full Stack Developer</h2>
+            <h2 class="text-2xl md:text-3xl text-blue-400 mb-6">Full Stack Developer for Hire</h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                Building robust and scalable applications from frontend to backend. 
+                Available for full-time positions and freelance projects.
+            </p>
             <div class="flex justify-center space-x-6 mb-12">
-                <a href="https://linkedin.com/in/zenjahid" class="text-2xl hover:text-blue-500 transition-colors">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://linkedin.com/in/zenjahid" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors">
+                    <i class="fab fa-linkedin mr-2"></i>Connect on LinkedIn
                 </a>
-                <a href="mailto:mail@zenjahid.com" class="text-2xl hover:text-blue-500 transition-colors">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://github.com/zenjahid" class="text-2xl hover:text-blue-500 transition-colors">
-                    <i class="fab fa-github"></i>
+                <a href="mailto:mail@zenjahid.com" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors">
+                    <i class="fas fa-envelope mr-2"></i>Hire Me
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Projects Section -->
+    <!-- Skills Section -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Technical Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend -->
+                <div class="bg-gray-800 rounded-xl p-6 skill-card transition-all duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Frontend Development</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Next.js & React Applications</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>TypeScript & JavaScript</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Modern CSS & Responsive Design</li>
+                    </ul>
+                </div>
+                
+                <!-- Backend -->
+                <div class="bg-gray-800 rounded-xl p-6 skill-card transition-all duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-purple-400">Backend Development</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Python & PHP Development</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>C/C++ System Programming</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Lua Scripting</li>
+                    </ul>
+                </div>
+                
+                <!-- Database -->
+                <div class="bg-gray-800 rounded-xl p-6 skill-card transition-all duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-indigo-400">Database Expertise</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>MongoDB & MySQL</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>PostgreSQL & DuckDB</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Database Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
     <section class="py-20 bg-gray-900">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <article class="project-card bg-black rounded-lg overflow-hidden transition-all duration-300">
-                    <div class="relative">
-                        <img src="/api/placeholder/400/300" alt="Project 1" class="w-full h-48 object-cover">
-                        <div class="absolute top-0 right-0 p-4 space-x-2">
-                            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">React</span>
-                            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Node.js</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Project Name 1</h3>
-                        <p class="text-gray-400 mb-4">A full-stack application featuring real-time updates and responsive design.</p>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-500 hover:text-blue-400 transition-colors">View Project</a>
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card bg-black rounded-lg overflow-hidden transition-all duration-300">
-                    <div class="relative">
-                        <img src="/api/placeholder/400/300" alt="Project 2" class="w-full h-48 object-cover">
-                        <div class="absolute top-0 right-0 p-4 space-x-2">
-                            <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm">Python</span>
-                            <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">Django</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Project Name 2</h3>
-                        <p class="text-gray-400 mb-4">A machine learning-powered web application for data analysis.</p>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-500 hover:text-blue-400 transition-colors">View Project</a>
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card bg-black rounded-lg overflow-hidden transition-all duration-300">
-                    <div class="relative">
-                        <img src="/api/placeholder/400/300" alt="Project 3" class="w-full h-48 object-cover">
-                        <div class="absolute top-0 right-0 p-4 space-x-2">
-                            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm">TypeScript</span>
-                            <span class="bg-indigo-500 text-white px-3 py-1 rounded-full text-sm">Next.js</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Project Name 3</h3>
-                        <p class="text-gray-400 mb-4">An e-commerce platform with advanced filtering and search capabilities.</p>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-500 hover:text-blue-400 transition-colors">View Project</a>
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What I Can Build For You</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-black p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">Web Applications</h3>
+                    <p class="text-gray-300">Full-stack web applications with modern frontend frameworks and robust backend systems. Specializing in Next.js, Python, and TypeScript solutions.</p>
+                </div>
+                <div class="bg-black p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">Database Solutions</h3>
+                    <p class="text-gray-300">Custom database architectures using MongoDB, PostgreSQL, MySQL, or DuckDB. Optimized for performance and scalability.</p>
+                </div>
+                <div class="bg-black p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">API Development</h3>
+                    <p class="text-gray-300">RESTful and GraphQL APIs built with Python, Node.js, or PHP. Secure, documented, and scalable.</p>
+                </div>
+                <div class="bg-black p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">System Programming</h3>
+                    <p class="text-gray-300">High-performance applications in C/C++. Custom system utilities and optimization solutions.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section class="py-20 bg-gradient-to-b from-gray-900 to-black">
+    <section class="py-20 bg-gradient-to-t from-black to-gray-900">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">Let's Work Together</h2>
-            <p class="text-gray-400 max-w-2xl mx-auto mb-12">
-                I'm currently available for freelance projects and full-time positions. 
-                If you're interested in collaborating, feel free to reach out!
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Build Something Amazing?</h2>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
+                I'm available for both full-time positions and freelance projects. 
+                Let's discuss how I can help bring your ideas to life.
             </p>
-            <a href="mailto:mail@zenjahid.com" 
-               class="inline-block bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition-colors">
-                Get in Touch
-            </a>
+            <div class="flex flex-col md:flex-row justify-center gap-6 md:gap-8">
+                <a href="mailto:mail@zenjahid.com" 
+                   class="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-colors text-lg">
+                    <i class="fas fa-envelope mr-2"></i>Contact for Hiring
+                </a>
+                <a href="https://github.com/zenjahid" 
+                   class="bg-gray-700 text-white px-8 py-4 rounded-full hover:bg-gray-600 transition-colors text-lg">
+                    <i class="fab fa-github mr-2"></i>View My Work
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-8 bg-black">
         <div class="container mx-auto px-4 text-center text-gray-400">
-            <p>© 2024 MD. Jahidul Haque Junayer. All rights reserved.</p>
+            <p>© 2024 MD. Jahidul Haque Junayer | Full Stack Developer</p>
         </div>
     </footer>
 </body>
